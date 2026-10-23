@@ -25,6 +25,7 @@ do it: `CGO_ENABLED=0`, so every one of them cross-compiles to wherever Go goes.
 | [`jpeg`](https://github.com/go-images/jpeg) | A fork of `image/jpeg` that upsamples a four-component picture's chroma **the way libjpeg does**, rather than by repeating each sample. The difference is visible on CMYK and YCCK scans, which is where four components come from. |
 | [`png`](https://github.com/go-images/png) | A fork of `image/png` with `DecodePartial(r) (image.Image, int, error)`: as much of the picture as `r` held, **and how much of it is real** — the number of complete pixel rows, counting from the top. For showing an image while it is still arriving. |
 | [`gif`](https://github.com/go-images/gif) | The same `DecodePartial` for `image/gif`, on the first frame: the frame at its full declared size, the rows that are complete, and the error that stopped the decode — `nil` when it arrived whole. |
+| [`webp`](https://github.com/go-images/webp) | WebP **encoding** in pure Go: the RIFF container, a lossless VP8L encoder and a lossy VP8 one with a quality from 0 to 100. |
 | [`jpeg2000`](https://github.com/go-images/jpeg2000) | A JPEG 2000 **encoder and decoder**, where the standard library has neither: `Encode`, `Decode`, the 5/3 reversible and 9/7 irreversible wavelets, and rate–distortion layer allocation. A fork of [`ajroetker/go-jpeg2000`](https://github.com/ajroetker/go-jpeg2000), and the only fork here. |
 | [`psd`](https://github.com/go-images/psd) | Adobe Photoshop `.psd` and `.psb` composites, registered for `image.Decode` like any other format. |
 
