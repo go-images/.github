@@ -28,6 +28,7 @@ do it: `CGO_ENABLED=0`, so every one of them cross-compiles to wherever Go goes.
 | [`webp`](https://github.com/go-images/webp) | WebP **encoding** in pure Go: the RIFF container, a lossless VP8L encoder and a lossy VP8 one with a quality from 0 to 100. |
 | [`jpeg2000`](https://github.com/go-images/jpeg2000) | A JPEG 2000 **encoder and decoder**, where the standard library has neither: `Encode`, `Decode`, the 5/3 reversible and 9/7 irreversible wavelets, and rate–distortion layer allocation. A fork of [`ajroetker/go-jpeg2000`](https://github.com/ajroetker/go-jpeg2000), and the only fork here. |
 | [`psd`](https://github.com/go-images/psd) | Adobe Photoshop `.psd` and `.psb` composites, registered for `image.Decode` like any other format. |
+| [`heif`](https://github.com/go-images/heif) | HEIC and HEIF stills (`.heic`, `.heif`) in pure Go: the HEVC picture, its rotation, mirroring and cropping, and a grid of tiles. Alpha, HDR gain maps and image sequences are not read. |
 
 ## Why `DecodePartial` is a different function and not a flag
 
